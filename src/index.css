@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+
+@layer utilities {
+  /* Bitcount Prop Single Ink - Example with weight 400 */
+  .bitcount-regular {
+    font-family: "Bitcount Prop Single Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "SZP1" 0,
+      "SZP2" 0, "XPN1" 0, "XPN2" 0, "YPN1" 0, "YPN2" 0;
+  }
+
+  .bitcount-bold {
+    font-family: "Bitcount Prop Single Ink", system-ui;
+    font-weight: 700;
+    font-optical-sizing: auto;
+  }
+
+  /* Poppins - general use */
+  .poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "../ui/Card.jsx";
 import { Mail, Phone, BarChart, MessageSquare } from "lucide-react";
 
-export const CandidateDetailView = ({ candidate }) => {
+ const CandidateDetailView = ({ candidate }) => {
  return (
   <Card>
     <CardContent className="p-0">
@@ -67,3 +67,4 @@ export const CandidateDetailView = ({ candidate }) => {
 );
 
 };
+export default CandidateDetailView;

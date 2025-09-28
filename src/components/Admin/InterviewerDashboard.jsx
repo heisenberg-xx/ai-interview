@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { useInterviewStore } from '../../store/useStore.js';
-import { CandidateList } from './CandidateList.jsx';
-import { CandidateDetailView } from './CandidateDetailView.jsx';
+import CandidateDetailView from './CandidateDetailView.jsx';
 import { Input } from '../ui/Input.jsx';
 import { Search } from 'lucide-react';
+import CandidateList from './CandidateList.jsx';
 
-export const InterviewerDashboard = () => {
+ const AdminDashBoard = () => {
   const { candidates } = useInterviewStore();
   const [selectedCandidateId, setSelectedCandidateId] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -74,3 +74,5 @@ export const InterviewerDashboard = () => {
 );
 
 };
+
+export default AdminDashBoard;

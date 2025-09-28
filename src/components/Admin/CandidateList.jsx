@@ -6,7 +6,7 @@ const SortIcon = ({ active, order }) => {
   return order === 'asc' ? <ArrowUp className="h-4 w-4 ml-1 inline-block" /> : <ArrowDown className="h-4 w-4 ml-1 inline-block" />;
 };
 
-export const CandidateList = ({
+ const CandidateList = ({
   candidates,
   onSelectCandidate,
   selectedCandidateId,
@@ -70,3 +70,5 @@ export const CandidateList = ({
     </div>
   );
 };
+
+export default CandidateList;

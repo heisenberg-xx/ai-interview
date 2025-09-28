@@ -3,7 +3,7 @@ import React from 'react';
 // TABS CONTAINER
 export const Tabs = ({ value, onChange, children }) => {
   return (
-    <div className="flex space-x-1 p-1 rounded-lg bg-indigo-600">
+    <div className="flex space-x-1 p-1 rounded-lg ">
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
           return React.cloneElement(child, {
