@@ -126,7 +126,7 @@ export const useInterviewStore = create(
       },
     }),
     {
-      name: 'interview-assistant-storage', // Generate Unique name lol
+      name: 'interview-assistant-storage',
     }
   )
 );
