@@ -37,7 +37,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black/90 text-gray-900 poppins">
+    <div className="min-h-screen bg-black/90 poppins">
       <header className="text-white  mb-5">
         <div className="container mx-auto px-4 py-4 flex flex-col justify-between items-center">
           <h1 className="text-5xl font-bold mb-5 bitcount-regular">InterVue</h1>

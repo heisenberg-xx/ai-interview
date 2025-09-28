@@ -227,7 +227,7 @@ const getTimeLimit = (difficulty) => {
           {/* 🔒 Confirmation Modal */}
           {showStopModal && (
             <Modal isOpen={true} title="Are you sure?">
-              <p className="text-gray-800 mb-6">
+              <p className="text-gray-500 mb-6 text-left">
                 You have an interview in progress. Would you like to resume or
                 start a new one?
               </p>

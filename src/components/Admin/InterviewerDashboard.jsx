@@ -65,7 +65,7 @@ import CandidateList from './CandidateList.jsx';
       {selectedCandidate ? (
         <CandidateDetailView candidate={selectedCandidate} />
       ) : (
-        <div className="flex items-center justify-center h-full border border-white rounded-lg">
+        <div className="flex items-center justify-center h-full  rounded-lg">
           <p className="text-gray-500 m-3">Select a candidate to view details.</p>
         </div>
       )}

@@ -4,10 +4,10 @@ export const Modal = ({ isOpen, onClose, children, title }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm">
-      <div className="bg-white text-sm font-medium text-gray-800 rounded-lg shadow-xl w-full max-w-md m-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center  bg-opacity-40 backdrop-blur-sm">
+      <div className="bg-[#1a1a1a] border-white border text-sm font-medium text-gray-800 rounded-lg shadow-xl w-full max-w-md m-4">
         <div className="p-6 border-b border-gray-200 flex justify-between items-center">
-          <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
+          <h2 className="text-xl font-semibold text-white">{title}</h2>
           {onClose && (
             <button
               onClick={onClose}
