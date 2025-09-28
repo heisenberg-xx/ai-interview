@@ -38,17 +38,17 @@ export const InterviewerDashboard = () => {
   const selectedCandidate = candidates.find(c => c.id === selectedCandidateId);
 
   return (
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div className="md:col-span-1">
+  <div className="flex flex-col w-full gap-8">
+    <div className=" flex flex-col items-center w-full">
       <h2 className="text-2xl font-bold mb-4 text-white">Candidates</h2>
-      <div className="relative mb-4">
+      <div className="relative mb-4 w-full max-w-md">
         <Input
           id="search-candidate"
           type="text"
           placeholder="Search by name or email..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className=" border border-white rounded-lg text-white w-full py-2 pl-10"
+          className=" border border-white rounded-lg text-white py-2 pl-10 w-full"
         />
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
       </div>
@@ -61,12 +61,12 @@ export const InterviewerDashboard = () => {
         sortOrder={sortOrder}
       />
     </div>
-    <div className="md:col-span-2">
+    <div className="">
       {selectedCandidate ? (
         <CandidateDetailView candidate={selectedCandidate} />
       ) : (
-        <div className="flex items-center justify-center h-full border border-indigo-400 rounded-lg">
-          <p className="text-gray-500">Select a candidate to view details.</p>
+        <div className="flex items-center justify-center h-full border border-white rounded-lg">
+          <p className="text-gray-500 m-3">Select a candidate to view details.</p>
         </div>
       )}
     </div>
